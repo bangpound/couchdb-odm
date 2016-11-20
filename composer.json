@@ -25,8 +25,8 @@
     },
     "bin": ["bin/doctrine-couchdb.php"],
     "autoload": {
-        "psr-0": {
-            "Doctrine\\ODM\\CouchDB": "lib/"
+        "psr-4": {
+            "Doctrine\\ODM\\CouchDB\\": "lib/"
         }
     }
 }

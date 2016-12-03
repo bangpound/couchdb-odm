@@ -38,6 +38,9 @@ use Doctrine\Common\Annotations\AnnotationReader,
  */
 class AnnotationDriver extends AbstractAnnotationDriver
 {
+    /**
+     * {@inheritDoc}
+     */
     protected $entityAnnotationClasses = array(
         'Doctrine\ODM\CouchDB\Mapping\Annotations\Document' => true,
         'Doctrine\ODM\CouchDB\Mapping\Annotations\EmbeddedDocument' => true,
@@ -45,7 +48,7 @@ class AnnotationDriver extends AbstractAnnotationDriver
     );
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function loadMetadataForClass($className, ClassMetadata $class)
     {
